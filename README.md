@@ -1,2 +1,1 @@
-# Small-Basket
-DBMS project
+# SmallBasket
