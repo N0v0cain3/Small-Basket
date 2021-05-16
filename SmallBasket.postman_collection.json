@@ -1,0 +1,877 @@
+{
+	"info": {
+		"_postman_id": "6c9544df-00bf-4585-bf7d-efe49252fc22",
+		"name": "SmallBasket",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Get all products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/products/all",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"products",
+								"all"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get all products",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/products/all",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"products",
+										"all"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, X-Requested-With, Content-Type, Accept, Authorization, auth-token, On-behalf-of, x-sg-elas-acl"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1240"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4d8-m9AKzHSftUudePT4zxnTH8Hxm80\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 31 Oct 2020 07:47:27 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"result\": [\n        {\n            \"p_id\": \"0ce9b5a0-19da-11eb-bc2a-6f402114a173\",\n            \"p_name\": \"orange\",\n            \"p_price\": 50,\n            \"p_expiry\": null,\n            \"p_url\": \"https://certify-hax.s3.ap-south-1.amazonaws.com/smallBasket/Orange-Whole-%26-Split.jpg\",\n            \"quantity\": 6\n        },\n        {\n            \"p_id\": \"23fe9070-19db-11eb-bcb9-837ed4c0bb02\",\n            \"p_name\": \"chocolate\",\n            \"p_price\": 150,\n            \"p_expiry\": null,\n            \"p_url\": \"https://certify-hax.s3.ap-south-1.amazonaws.com/smallBasket/dark-chocolate-bar-squares.webp\",\n            \"quantity\": 10\n        },\n        {\n            \"p_id\": \"45efd770-1b4d-11eb-baa7-b94e0a06ce20\",\n            \"p_name\": \"mango\",\n            \"p_price\": 131,\n            \"p_expiry\": \"2020-10-23T18:30:00.000Z\",\n            \"p_url\": \"https://certify-hax.s3.ap-south-1.amazonaws.com/smallBasket/apple.jpg\",\n            \"quantity\": null\n        },\n        {\n            \"p_id\": \"8d430f40-16eb-11eb-8ae3-3777a2781246\",\n            \"p_name\": \"apple\",\n            \"p_price\": 100,\n            \"p_expiry\": \"2020-10-23T18:30:00.000Z\",\n            \"p_url\": \"https://certify-hax.s3.ap-south-1.amazonaws.com/smallBasket/apple.jpg\",\n            \"quantity\": 2\n        },\n        {\n            \"p_id\": \"e1014e80-1ac9-11eb-ac26-570226c018f4\",\n            \"p_name\": \"cake\",\n            \"p_price\": 500,\n            \"p_expiry\": null,\n            \"p_url\": \"https://certify-hax.s3.ap-south-1.amazonaws.com/smallBasket/download.jpg\",\n            \"quantity\": 3\n        },\n        {\n            \"p_id\": \"ee6ece80-1ac9-11eb-ac26-570226c018f4\",\n            \"p_name\": \"chocolate milk\",\n            \"p_price\": 40,\n            \"p_expiry\": null,\n            \"p_url\": \"https://certify-hax.s3.ap-south-1.amazonaws.com/smallBasket/milk.jpg\",\n            \"quantity\": 5\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/products/search/app",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"products",
+								"search",
+								"app"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "search",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/products/search/app",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"products",
+										"search",
+										"app"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, X-Requested-With, Content-Type, Accept, Authorization, auth-token, On-behalf-of, x-sg-elas-acl"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "209"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"d1-TdkoUP6RSj8KXl33oG8y+bMieME\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 30 Oct 2020 15:24:28 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"result\": [\n        {\n            \"p_id\": \"8d430f40-16eb-11eb-8ae3-3777a2781246\",\n            \"p_name\": \"Apple\",\n            \"p_price\": 131,\n            \"p_expiry\": \"2020-10-23T18:30:00.000Z\",\n            \"p_url\": \"https://certify-hax.s3.ap-south-1.amazonaws.com/smallBasket/apple.jpg\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Admin add product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Shivam/Desktop/products/apple.jpg"
+								},
+								{
+									"key": "p_name",
+									"value": "mango",
+									"type": "text"
+								},
+								{
+									"key": "p_price",
+									"value": "131",
+									"type": "text"
+								},
+								{
+									"key": "p_expiry",
+									"value": "2020-10-24",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/admin/addProduct",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"admin",
+								"addProduct"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Admin add product",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/Shivam/Desktop/products/apple.jpg"
+										},
+										{
+											"key": "p_name",
+											"value": "mango",
+											"type": "text"
+										},
+										{
+											"key": "p_price",
+											"value": "131",
+											"type": "text"
+										},
+										{
+											"key": "p_expiry",
+											"value": "2020-10-24",
+											"type": "text"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/admin/addProduct",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"admin",
+										"addProduct"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, X-Requested-With, Content-Type, Accept, Authorization, auth-token, On-behalf-of, x-sg-elas-acl"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "138"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"8a-px2e9Gse5S7qtScyxaqGKCk1NzM\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 31 Oct 2020 07:47:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"result\": {\n        \"fieldCount\": 0,\n        \"affectedRows\": 1,\n        \"insertId\": 0,\n        \"serverStatus\": 2,\n        \"warningCount\": 0,\n        \"message\": \"\",\n        \"protocol41\": true,\n        \"changedRows\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "modify product",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"p_price\":\"120\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/admin/modify/8d430f40-16eb-11eb-8ae3-3777a2781246",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"admin",
+								"modify",
+								"8d430f40-16eb-11eb-8ae3-3777a2781246"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "modify product",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"p_price\":\"120\" \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/admin/modify/8d430f40-16eb-11eb-8ae3-3777a2781246",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"admin",
+										"modify",
+										"8d430f40-16eb-11eb-8ae3-3777a2781246"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, X-Requested-With, Content-Type, Accept, Authorization, auth-token, On-behalf-of, x-sg-elas-acl"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "180"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b4-O9/n+iM2t0WWJBT1J3hd+IszGgw\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 30 Oct 2020 20:24:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"result\": {\n        \"fieldCount\": 0,\n        \"affectedRows\": 6,\n        \"insertId\": 0,\n        \"serverStatus\": 34,\n        \"warningCount\": 0,\n        \"message\": \"(Rows matched: 6  Changed: 6  Warnings: 0\",\n        \"protocol41\": true,\n        \"changedRows\": 6\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Cart",
+			"item": [
+				{
+					"name": "Add product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"p_id\":\"300c0700-15c4-11eb-98b6-99096ec8bda3\",\r\n    \"cart_id\":\"e33d9830-160e-11eb-aa5c-730e087e6594\",\r\n    \"customer_id\":\"dsa\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/cart/add",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cart",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get products of cart",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"p_id\":\"e4523c20-15c4-11eb-8c4c-79c9c866b436\",\r\n    \"p_name\":\"Jhanak\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/cart/e33d9830-160e-11eb-aa5c-730e087e6594",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cart",
+								"e33d9830-160e-11eb-aa5c-730e087e6594"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete item",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product_id\":\"300c0700-15c4-11eb-98b6-99096ec8bda3\",\r\n    \"cart_id\":\"e33d9830-160e-11eb-aa5c-730e087e6594\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/cart/item",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cart",
+								"item"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get total bill",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/cart/e33d9830-160e-11eb-aa5c-730e087e6594/bill",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cart",
+								"e33d9830-160e-11eb-aa5c-730e087e6594",
+								"bill"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get total bill",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/cart/e33d9830-160e-11eb-aa5c-730e087e6594/bill",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"cart",
+										"e33d9830-160e-11eb-aa5c-730e087e6594",
+										"bill"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "11"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b-IsbNk9gt0TLxntNsQ/3DyRrpmpo\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 Oct 2020 16:27:28 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"sum\": 262\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "add customer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"f_name\":\"Shivam\",\r\n    \"l_name\":\"Mehta\",\r\n    \"address\":\"Sector 1/B Gandhinagar\",\r\n    \"gender\":\"male\",\r\n    \"email\":\"nousernameidea0709@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/customer/add",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"customer",
+								"add"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "add customer",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"f_name\":\"golu\",\r\n    \"l_name\":\"goopta\",\r\n    \"address\":\"mirza\",\r\n    \"gender\":\"female\",\r\n    \"email\":\"eeee@gmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/customer/add",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"customer",
+										"add"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "138"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"8a-px2e9Gse5S7qtScyxaqGKCk1NzM\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 Oct 2020 17:33:11 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"result\": {\n        \"fieldCount\": 0,\n        \"affectedRows\": 1,\n        \"insertId\": 0,\n        \"serverStatus\": 2,\n        \"warningCount\": 0,\n        \"message\": \"\",\n        \"protocol41\": true,\n        \"changedRows\": 0\n    }\n}"
+						},
+						{
+							"name": "add customer",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"f_name\":\"Shivam\",\r\n    \"l_name\":\"Mehta\",\r\n    \"address\":\"Sector 1/B Gandhinagar\",\r\n    \"gender\":\"male\",\r\n    \"email\":\"nousernameidea0709@gmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/customer/add",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"customer",
+										"add"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, X-Requested-With, Content-Type, Accept, Authorization, auth-token, On-behalf-of, x-sg-elas-acl"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "138"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"8a-px2e9Gse5S7qtScyxaqGKCk1NzM\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 28 Oct 2020 15:37:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"result\": {\n        \"fieldCount\": 0,\n        \"affectedRows\": 1,\n        \"insertId\": 0,\n        \"serverStatus\": 2,\n        \"warningCount\": 0,\n        \"message\": \"\",\n        \"protocol41\": true,\n        \"changedRows\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get user by id ",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/customer/fd0c6510-161e-11eb-b6c5-094bf6b62a49",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"customer",
+								"fd0c6510-161e-11eb-b6c5-094bf6b62a49"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get user by id ",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/customer/fd0c6510-161e-11eb-b6c5-094bf6b62a49",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"customer",
+										"fd0c6510-161e-11eb-b6c5-094bf6b62a49"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, X-Requested-With, Content-Type, Accept, Authorization, auth-token, On-behalf-of, x-sg-elas-acl"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "158"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"9e-MKBpp8oygLzci5m/6+3321kBlog\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 28 Oct 2020 15:27:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"result\": [\n        {\n            \"user_id\": \"fd0c6510-161e-11eb-b6c5-094bf6b62a49\",\n            \"F_name\": \"golu\",\n            \"L_name\": \"goopta\",\n            \"address\": \"mirza\",\n            \"email\": \"eeee@gmail.com\",\n            \"gender\": \"female\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "place order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customer_id\":\"7e6ef700-1933-11eb-8137-a734cbced89d\",\r\n    \"cart_id\":\"e33d9830-160e-11eb-aa5c-730e087e6594\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/cart/order",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cart",
+								"order"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "place order",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"customer_id\":\"7e6ef700-1933-11eb-8137-a734cbced89d\",\r\n    \"cart_id\":\"e33d9830-160e-11eb-aa5c-730e087e6594\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/cart/order",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"cart",
+										"order"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, X-Requested-With, Content-Type, Accept, Authorization, auth-token, On-behalf-of, x-sg-elas-acl"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "497"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1f1-LLQpT25d/mFRVwG5GjWGSdJZB8w\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 28 Oct 2020 16:21:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"cart\": [\n        {\n            \"cart_id\": \"e33d9830-160e-11eb-aa5c-730e087e6594\",\n            \"product_id\": \"8d430f40-16eb-11eb-8ae3-3777a2781246\",\n            \"p_id\": \"8d430f40-16eb-11eb-8ae3-3777a2781246\",\n            \"p_name\": \"Apple\",\n            \"p_price\": 131,\n            \"p_expiry\": \"2020-10-23T18:30:00.000Z\",\n            \"p_url\": \"https://certify-hax.s3.ap-south-1.amazonaws.com/smallBasket/apple.jpg\"\n        }\n    ],\n    \"customer\": [\n        {\n            \"user_id\": \"7e6ef700-1933-11eb-8137-a734cbced89d\",\n            \"F_name\": \"Shivam\",\n            \"L_name\": \"Mehta\",\n            \"address\": \"Sector 1/B Gandhinagar\",\n            \"email\": \"nousernameidea0709@gmail.com\",\n            \"gender\": \"male\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
